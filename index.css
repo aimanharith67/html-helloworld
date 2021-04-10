@@ -1,0 +1,105 @@
+body {
+    font-family: 'Roboto', sans-serif;    
+    margin: 0;
+    overflow: hidden;
+}
+
+    .animate__zoomInDown{
+      animation-iteration-count: 1 !important;
+      position: absolute;
+      top: 35%;
+      left: 32%;
+    }
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 95px !important;
+    font-weight: 900;
+    text-align: center;
+    margin: auto;
+   
+    animation-iteration-count: 1;
+    
+    /* animation */
+    --color1: #642B73;
+    --color2: #C6426E;
+    font-family: 'Dela Gothic One', cursive;
+    text-align: center;
+    font-size: 46px;
+    background: repeating-linear-gradient(
+      45deg,
+      var(--color1),
+      var(--color1) 30px,
+      var(--color2) 30px,
+      var(--color2) 60px
+    );
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: 40s linear 0s infinite move;
+    
+}
+
+  
+  @keyframes move {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: 1000px;
+    }
+  }
+  
+/* Balloon */
+.balloon {
+    --animate-duration: 9s !important;
+  }
+
+  .col {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    position: absolute;
+  }
+
+  .row {margin: 0 -5px;}
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
+@keyframes bgcolor{
+    0% {
+        background-color: #f4dcdc;
+    }
+    20% {
+        background-color: #f8e2c7;
+    }
+    40% {
+        background-color: #faf2cb;
+    }
+    60% {
+        background-color: #cff4ec;
+    }
+    80% {
+        background-color: #d4e7f0;
+    }
+    100% {
+        background-color: #eee5f6;
+    }
+}
+
+header {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 12s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@media (max-width: 1568px) {
+    .itemset {
+      max-width: 1300px !important;
+    }
+  }
